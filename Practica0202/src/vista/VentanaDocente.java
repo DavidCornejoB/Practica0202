@@ -10,6 +10,6 @@ package vista;
  *
  * @author Administrador
  */
-public class VentanaDocente {
-    
+public class VentanaDocente{
+       
 }
