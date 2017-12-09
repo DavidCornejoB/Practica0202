@@ -6,10 +6,26 @@
 
 package controlador;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import vista.VentanaDocente;
+
 /**
  *
  * @author Administrador
  */
-public class EventoVentanaDocente {
+public class EventoVentanaDocente implements ActionListener {
+    
+    private VentanaDocente vD;
+
+    public EventoVentanaDocente(VentanaDocente vD) {
+        this.vD = vD;
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        
+        
+    }
     
 }

@@ -1,16 +1,27 @@
 
 package modelo;
 
-public class Curso extends Persona {
+public class Curso {
      
     private String paralelo;
     private int numAlumnos;
+    private Materia materia;
 
-    public Curso(String paralelo, int numAlumnos, String nombre, String cedula, String fechaNac) {
-        super(nombre, cedula, fechaNac);
+    public Curso(String paralelo, int numAlumnos, Materia materia) {
         this.paralelo = paralelo;
         this.numAlumnos = numAlumnos;
+        this.materia = materia;
     }
+
+    public Materia getMateria() {
+        return materia;
+    }
+
+    public void setMateria(Materia materia) {
+        this.materia = materia;
+    }
+
+    
 
     public String getParalelo() {
         return paralelo;
@@ -30,8 +41,9 @@ public class Curso extends Persona {
 
     @Override
     public String toString() {
-        return "Curso{" + "paralelo=" + paralelo + ", numAlumnos=" + numAlumnos + '}';
+        return "Curso{" + "paralelo=" + paralelo + ", numAlumnos=" + numAlumnos + ", materia=" + materia + '}';
     }
+
     
     
     
